@@ -356,7 +356,99 @@ def main():
     print_teams_json(teams)
 
 
+ROUND_TEMPLATE = {
+      "Name": "QF",
+      "Description": "yeasd",
+      "BestOf": 9,
+      "Beatmaps": [
+        {
+          "ID": 1258112,
+          "Mods": "NM",
+          # "BeatmapInfo": {
+          #   "OnlineID": 1258112,
+          #   "DifficultyName": "[5K] Insane",
+          #   "BPM": 180.01,
+          #   "Length": 197000.0,
+          #   "StarRating": 2.2,
+          #   "Metadata": {
+          #     "Title": "Watchout (feat. Ragga Twins)",
+          #     "title_unicode": "Watchout (feat. Ragga Twins)",
+          #     "Artist": "Dirtyphonics & Bassnectar",
+          #     "artist_unicode": "Dirtyphonics & Bassnectar",
+          #     "Author": {
+          #       "OnlineID": 8659704,
+          #       "Username": "FarewellObject",
+          #       "CountryString": "Unknown"
+          #     },
+          #     "Source": "",
+          #     "tags": "watchout",
+          #     "PreviewTime": -1,
+          #     "AudioFile": "",
+          #     "BackgroundFile": ""
+          #   },
+          #   "Difficulty": {
+          #     "DrainRate": 5.0,
+          #     "CircleSize": 5.0,
+          #     "OverallDifficulty": 5.0,
+          #     "ApproachRate": 5.0,
+          #     "SliderMultiplier": 1.0,
+          #     "SliderTickRate": 1.0
+          #   },
+          #   "Covers": {
+          #     "cover@2x": "https://assets.ppy.sh/beatmaps/594851/covers/cover@2x.jpg?1491361484",
+          #     "card@2x": "https://assets.ppy.sh/beatmaps/594851/covers/card@2x.jpg?1491361484",
+          #     "list@2x": "https://assets.ppy.sh/beatmaps/594851/covers/list@2x.jpg?1491361484"
+          #   }
+          # }
+        },
+        {
+          "ID": 59125,
+          "Mods": "FM",
+        },
+        {
+          "ID": 125815,
+          "Mods": "HR",
+        }
+      ],
+      "StartDate": "2023-03-26T08:07:03.586231+00:00",
+      "Matches": []
+    }
+
+
+def create_rounds():
+    rounds = list()
+    current_round_name = ""
+    round_entry = None
+    with open("./ACC Waiter - Mappools.csv", "r") as infile:
+        csv_reader = csv.reader(infile)
+        for row in csv_reader:
+            try:
+                round_name = row[6]
+                map_id = int(row[10])
+                pick_name = row[7]
+                # print(round_name, pick_name, map_id)
+            except ValueError:
+                continue
+
+            if current_round_name != round_name:
+                round_entry = {
+                    "Name":        round_name,
+                    "Description": "",
+                    "BestOf":      9,
+                    "Beatmaps": [],
+                }
+                current_round_name = round_name
+
+                if round_entry is not None:
+                    rounds.append(round_entry)
+            round_entry["Beatmaps"].append({"ID": map_id, "Mods": pick_name.rstrip("0123456789")})
+
+    print(json.dumps(rounds))
+
+
 if __name__ == "__main__":
     # main()
-    print_bracket(16)
+    # print_bracket(16)
     # todo: size 32 is not doing stage match count reduction correctly
+
+    create_rounds()

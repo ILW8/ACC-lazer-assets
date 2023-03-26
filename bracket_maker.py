@@ -222,6 +222,7 @@ def print_bracket(max_round_of: int):
     match_block_offset_x = 256
     winner_y_offset = 64
     losers_y_offset = max_round_of * 48 + 128
+    losers_x_offset = (match_block_offset_x * 3) // 4
     while num_matches > 0:
         # let n be the number of starting matches,
         # there are n/2 losers bracket matches
@@ -232,13 +233,11 @@ def print_bracket(max_round_of: int):
             match = MATCH_TEMPLATE.copy()
             match["id"] = match_id
             match["Position"] = {
-                "X": stage * match_block_offset_x,
-                "Y": winner_y_offset +
-                     match_block_index * match_block_offset_y * (stage * 2 if stage > 0 else 1) +
-                     int(max(0, stage - 0.5) * match_block_offset_y)
+                "X": stage * (match_block_offset_x * (2 if stage > 1 else 1)) - (match_block_offset_x * (stage > 1)),
+                "Y": winner_y_offset + match_block_index * match_block_offset_y * (stage * 2 if stage > 0 else 1) +
+                int(max(0, stage - 0.5) * match_block_offset_y)
             }
-            # print(
-            #         f"{match_id:>02} WB stage {stage} match_block_index {match_block_index} thing {max_round_of}  nm {num_matches}: {match['Position']}")
+            print(f"{match_id:>02} WB stage {stage}: {match['Position']}")
 
             matches.append(match)
             matches_structure[stage]["WB"].append(match_id)
@@ -255,10 +254,12 @@ def print_bracket(max_round_of: int):
             match["id"] = match_id
 
             num_step = match_block_index if not is_second_half_lb else match_block_index - lb_first_half_count
-            y_step_size = match_block_offset_y * ((2 * stage//2) + is_second_half_lb if stage > 0 else 1)
-            y = losers_y_offset + num_step * y_step_size + int(max(0, (2*is_second_half_lb + stage)//2 - 0.5) * match_block_offset_y)
+            y_step_size = match_block_offset_y * ((2 * stage // 2) + is_second_half_lb if stage > 0 else 1)
+            ladder_inset_offset = int(max(0, (2 * is_second_half_lb + stage) // 2 - 0.5) * match_block_offset_y)
+            y = losers_y_offset + num_step * y_step_size + ladder_inset_offset
             match["Position"] = {
-                "X": (stage_lb + (1 if match_block_index >= lb_first_half_count else 0)) * match_block_offset_x,
+                "X": losers_x_offset +
+                     (stage_lb + (1 if match_block_index >= lb_first_half_count else 0)) * match_block_offset_x,
                 "Y": y
             }
             matches_structure[stage][f"LB{0 if match_block_index < lb_first_half_count else 1}"].append(match_id)
@@ -283,15 +284,46 @@ def print_bracket(max_round_of: int):
             continue
 
         # print(stage, matches_sets)
-        # do WB
         print(f"Link matches from {matches_structure[stage - 1]['WB']} to {matches_sets['WB']}")
         for matchset_index, match_id in enumerate(matches_structure[stage - 1]['WB']):
+            # do WB
+
             progression = {
                 "SourceID": match_id,
                 "TargetID": matches_sets['WB'][matchset_index // 2],
                 "Losers":   False,
             }
             progressions.append(progression)
+
+            # do WB to LB
+            progression = {
+                "SourceID": match_id,
+                "TargetID": matches_structure[stage - 1]['LB0'][matchset_index // (1 if stage > 1 else 2)],
+                "Losers":   True,
+            }
+            progressions.append(progression)
+
+        # intra-stage LB progressions
+        if "LB1" in matches_sets:
+            for matchset_index, match_id in enumerate(matches_sets["LB0"]):
+                progression = {
+                    "SourceID": match_id,
+                    "TargetID": matches_sets['LB1'][matchset_index // 2],
+                    "Losers":   False,
+                }
+                progressions.append(progression)
+
+        # inter-stage LB progressions
+        prev_stage_source = "LB1" if "LB1" in matches_structure[stage - 1] else "LB0"
+        # for matchset_index, match_id in enumerate(matches_structure[stage - 1][prev_stage_source]):
+        for matchset_index, match_id in enumerate(matches_sets["LB0"]):
+            progression = {
+                "SourceID": matches_structure[stage - 1][prev_stage_source][matchset_index],
+                "TargetID": match_id,
+                "Losers":   False,
+            }
+            progressions.append(progression)
+
     print(json.dumps(progressions))
 
 

@@ -359,3 +359,4 @@ def main():
 if __name__ == "__main__":
     # main()
     print_bracket(16)
+    # todo: size 32 is not doing stage match count reduction correctly

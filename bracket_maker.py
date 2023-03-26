@@ -237,7 +237,7 @@ def print_bracket(max_round_of: int):
                 "Y": winner_y_offset + match_block_index * match_block_offset_y * (stage * 2 if stage > 0 else 1) +
                 int(max(0, stage - 0.5) * match_block_offset_y)
             }
-            print(f"{match_id:>02} WB stage {stage}: {match['Position']}")
+            # print(f"{match_id:>02} WB stage {stage}: {match['Position']}")
 
             matches.append(match)
             matches_structure[stage]["WB"].append(match_id)
@@ -264,8 +264,8 @@ def print_bracket(max_round_of: int):
             }
             matches_structure[stage][f"LB{0 if match_block_index < lb_first_half_count else 1}"].append(match_id)
 
-            print(f"{match_id:>02} LB stage {stage} "
-                  f"({0 if match_block_index < lb_first_half_count else 1}): {match['Position']}")
+            # print(f"{match_id:>02} LB stage {stage} "
+            #       f"({0 if match_block_index < lb_first_half_count else 1}): {match['Position']}")
 
             matches.append(match)
         if should_add_another_lb_stage:
@@ -274,17 +274,19 @@ def print_bracket(max_round_of: int):
         num_matches //= 2
         stage += 1
         stage_lb += 1
+    print("Copy paste into `bracket.json`'s `Matches` key:")
     print(json.dumps(matches))
+    print()
 
     # create Progressions
-    print(json.dumps(matches_structure))
+    # print(json.dumps(matches_structure))
     progressions = list()
     for stage, matches_sets in matches_structure.items():
         if not stage:
             continue
 
         # print(stage, matches_sets)
-        print(f"Link matches from {matches_structure[stage - 1]['WB']} to {matches_sets['WB']}")
+        # print(f"Link matches from {matches_structure[stage - 1]['WB']} to {matches_sets['WB']}")
         for matchset_index, match_id in enumerate(matches_structure[stage - 1]['WB']):
             # do WB
 
@@ -324,6 +326,7 @@ def print_bracket(max_round_of: int):
             }
             progressions.append(progression)
 
+    print("Copy paste into `bracket.json`'s `Progressions` key:")
     print(json.dumps(progressions))
 
 

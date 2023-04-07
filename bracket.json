@@ -9,11 +9,11 @@
   "Matches": [
     {
       "ID": 1,
-      "Team1Acronym": "",
-      "Team1Score": null,
-      "Team2Acronym": "",
-      "Team2Score": null,
-      "Completed": false,
+      "Team1Acronym": "\\o/",
+      "Team1Score": 5,
+      "Team2Acronym": "FUFU",
+      "Team2Score": 0,
+      "Completed": true,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
@@ -23,19 +23,18 @@
         "Y": 64
       },
       "Acronyms": [
-        "",
-        ""
+        "\\o/",
+        "FUFU"
       ],
-      "WinnerColour": "Blue",
       "PointsToWin": 5
     },
     {
       "ID": 3,
-      "Team1Acronym": "",
-      "Team1Score": null,
-      "Team2Acronym": "",
-      "Team2Score": null,
-      "Completed": false,
+      "Team1Acronym": "amd",
+      "Team1Score": 5,
+      "Team2Acronym": "neor",
+      "Team2Score": 2,
+      "Completed": true,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
@@ -45,19 +44,18 @@
         "Y": 160
       },
       "Acronyms": [
-        "",
-        ""
+        "amd",
+        "neor"
       ],
-      "WinnerColour": "Blue",
       "PointsToWin": 5
     },
     {
       "ID": 5,
       "Team1Acronym": "Baba",
-      "Team1Score": null,
+      "Team1Score": 5,
       "Team2Acronym": "math",
-      "Team2Score": null,
-      "Completed": false,
+      "Team2Score": 1,
+      "Completed": true,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
@@ -70,7 +68,6 @@
         "Baba",
         "math"
       ],
-      "WinnerColour": "Blue",
       "PointsToWin": 5
     },
     {
@@ -119,7 +116,7 @@
       "ID": 11,
       "Team1Acronym": "Carb",
       "Team1Score": 3,
-      "Team2Acronym": "FRFR",
+      "Team2Acronym": "FROG",
       "Team2Score": 5,
       "Completed": true,
       "Losers": false,
@@ -132,7 +129,7 @@
       },
       "Acronyms": [
         "Carb",
-        "FRFR"
+        "FROG"
       ],
       "WinnerColour": "Blue",
       "PointsToWin": 5
@@ -146,7 +143,7 @@
       "Completed": true,
       "Losers": false,
       "PicksBans": [],
-      "Current": true,
+      "Current": false,
       "Date": "2023-03-26T09:20:48.492222+01:00",
       "ConditionalMatches": [],
       "Position": {
@@ -161,10 +158,10 @@
     {
       "ID": 15,
       "Team1Acronym": "wdh",
-      "Team1Score": null,
+      "Team1Score": 5,
       "Team2Acronym": "WW",
-      "Team2Score": null,
-      "Completed": false,
+      "Team2Score": 0,
+      "Completed": true,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
@@ -177,13 +174,14 @@
         "wdh",
         "WW"
       ],
-      "WinnerColour": "Blue",
       "PointsToWin": 5
     },
     {
       "ID": 16,
-      "Team1Score": null,
-      "Team2Score": null,
+      "Team1Acronym": "FUFU",
+      "Team1Score": 5,
+      "Team2Acronym": "neor",
+      "Team2Score": 1,
       "Completed": false,
       "Losers": true,
       "PicksBans": [],
@@ -194,13 +192,18 @@
         "X": 192,
         "Y": 896
       },
-      "Acronyms": []
+      "Acronyms": [
+        "FUFU",
+        "neor"
+      ],
+      "WinnerColour": "Blue"
     },
     {
       "ID": 20,
-      "Team1Acronym": "AFM",
-      "Team1Score": null,
-      "Team2Score": null,
+      "Team1Acronym": "math",
+      "Team1Score": 0,
+      "Team2Acronym": "AFM",
+      "Team2Score": 5,
       "Completed": false,
       "Losers": true,
       "PicksBans": [],
@@ -212,6 +215,7 @@
         "Y": 992
       },
       "Acronyms": [
+        "math",
         "AFM"
       ],
       "WinnerColour": "Blue"
@@ -219,9 +223,9 @@
     {
       "ID": 23,
       "Team1Acronym": "tiny",
-      "Team1Score": null,
+      "Team1Score": 0,
       "Team2Acronym": "Carb",
-      "Team2Score": null,
+      "Team2Score": 5,
       "Completed": false,
       "Losers": true,
       "PicksBans": [],
@@ -241,12 +245,13 @@
     {
       "ID": 27,
       "Team1Acronym": "GTQ",
-      "Team1Score": null,
-      "Team2Score": null,
+      "Team1Score": 3,
+      "Team2Acronym": "WW",
+      "Team2Score": 5,
       "Completed": false,
       "Losers": true,
       "PicksBans": [],
-      "Current": false,
+      "Current": true,
       "Date": "2023-03-26T05:42:36.527195+01:00",
       "ConditionalMatches": [],
       "Position": {
@@ -254,14 +259,17 @@
         "Y": 1184
       },
       "Acronyms": [
-        "GTQ"
+        "GTQ",
+        "WW"
       ],
       "WinnerColour": "Blue"
     },
     {
       "ID": 2,
-      "Team1Score": null,
-      "Team2Score": null,
+      "Team1Acronym": "\\o/",
+      "Team1Score": 4,
+      "Team2Acronym": "amd",
+      "Team2Score": 1,
       "Completed": false,
       "Losers": false,
       "PicksBans": [],
@@ -272,10 +280,15 @@
         "X": 256,
         "Y": 112
       },
-      "Acronyms": []
+      "Acronyms": [
+        "\\o/",
+        "amd"
+      ],
+      "WinnerColour": "Blue"
     },
     {
       "ID": 6,
+      "Team1Acronym": "Baba",
       "Team1Score": null,
       "Team2Acronym": "GOAT",
       "Team2Score": null,
@@ -290,8 +303,10 @@
         "Y": 304
       },
       "Acronyms": [
+        "Baba",
         "GOAT"
-      ]
+      ],
+      "WinnerColour": "Blue"
     },
     {
       "ID": 10,
@@ -319,6 +334,7 @@
       "ID": 14,
       "Team1Acronym": "Burg",
       "Team1Score": null,
+      "Team2Acronym": "wdh",
       "Team2Score": null,
       "Completed": false,
       "Losers": false,
@@ -331,13 +347,16 @@
         "Y": 688
       },
       "Acronyms": [
-        "Burg"
+        "Burg",
+        "wdh"
       ],
       "WinnerColour": "Blue"
     },
     {
       "ID": 17,
+      "Team1Acronym": "wdh",
       "Team1Score": null,
+      "Team2Acronym": "FUFU",
       "Team2Score": null,
       "Completed": false,
       "Losers": true,
@@ -349,10 +368,15 @@
         "X": 448,
         "Y": 896
       },
-      "Acronyms": []
+      "Acronyms": [
+        "wdh",
+        "FUFU"
+      ],
+      "WinnerColour": "Blue"
     },
     {
       "ID": 21,
+      "Team1Acronym": "FROG",
       "Team1Score": null,
       "Team2Score": null,
       "Completed": false,
@@ -365,11 +389,16 @@
         "X": 448,
         "Y": 992
       },
-      "Acronyms": []
+      "Acronyms": [
+        "FROG"
+      ],
+      "WinnerColour": "Blue"
     },
     {
       "ID": 24,
+      "Team1Acronym": "Baba",
       "Team1Score": null,
+      "Team2Acronym": "Carb",
       "Team2Score": null,
       "Completed": false,
       "Losers": true,
@@ -381,10 +410,15 @@
         "X": 448,
         "Y": 1088
       },
-      "Acronyms": []
+      "Acronyms": [
+        "Baba",
+        "Carb"
+      ],
+      "WinnerColour": "Blue"
     },
     {
       "ID": 28,
+      "Team1Acronym": "amd",
       "Team1Score": null,
       "Team2Score": null,
       "Completed": false,
@@ -397,7 +431,10 @@
         "X": 448,
         "Y": 1184
       },
-      "Acronyms": []
+      "Acronyms": [
+        "amd"
+      ],
+      "WinnerColour": "Blue"
     },
     {
       "ID": 18,
@@ -450,6 +487,7 @@
     {
       "ID": 12,
       "Team1Score": null,
+      "Team2Acronym": "Burg",
       "Team2Score": null,
       "Completed": false,
       "Losers": false,
@@ -461,7 +499,9 @@
         "X": 768,
         "Y": 592
       },
-      "Acronyms": []
+      "Acronyms": [
+        "Burg"
+      ]
     },
     {
       "ID": 19,
@@ -2766,7 +2806,7 @@
       "Losers": true
     }
   ],
-  "ChromaKeyWidth": 1024,
+  "ChromaKeyWidth": 1366,
   "PlayersPerTeam": 4,
   "AutoProgressScreens": true
 }

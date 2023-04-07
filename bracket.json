@@ -171,14 +171,14 @@
     {
       "ID": 16,
       "Team1Acronym": "FUFU",
-      "Team1Score": 5,
+      "Team1Score": 6,
       "Team2Acronym": "neor",
       "Team2Score": 1,
-      "Completed": false,
+      "Completed": true,
       "Losers": true,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-07T07:10:04.833137+01:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 192,
@@ -188,19 +188,19 @@
         "FUFU",
         "neor"
       ],
-      "WinnerColour": "Blue"
+      "PointsToWin": 6
     },
     {
       "ID": 20,
       "Team1Acronym": "math",
       "Team1Score": 0,
       "Team2Acronym": "AFM",
-      "Team2Score": 5,
-      "Completed": false,
+      "Team2Score": 6,
+      "Completed": true,
       "Losers": true,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-07T07:10:04.833137+01:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 192,
@@ -210,19 +210,20 @@
         "math",
         "AFM"
       ],
-      "WinnerColour": "Blue"
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 23,
       "Team1Acronym": "tiny",
       "Team1Score": 0,
       "Team2Acronym": "Carb",
-      "Team2Score": 5,
-      "Completed": false,
+      "Team2Score": 6,
+      "Completed": true,
       "Losers": true,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-07T07:10:04.833137+01:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 192,
@@ -232,19 +233,20 @@
         "tiny",
         "Carb"
       ],
-      "WinnerColour": "Blue"
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 27,
       "Team1Acronym": "GTQ",
       "Team1Score": 3,
       "Team2Acronym": "WW",
-      "Team2Score": 5,
-      "Completed": false,
+      "Team2Score": 6,
+      "Completed": true,
       "Losers": true,
       "PicksBans": [],
-      "Current": true,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Current": false,
+      "Date": "2023-04-07T07:10:04.833137+01:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 192,
@@ -254,19 +256,20 @@
         "GTQ",
         "WW"
       ],
-      "WinnerColour": "Blue"
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 2,
       "Team1Acronym": "\\o/",
-      "Team1Score": 4,
+      "Team1Score": 6,
       "Team2Acronym": "amd",
       "Team2Score": 1,
-      "Completed": false,
+      "Completed": true,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-07T07:10:04.833137+01:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 256,
@@ -276,19 +279,19 @@
         "\\o/",
         "amd"
       ],
-      "WinnerColour": "Blue"
+      "PointsToWin": 6
     },
     {
       "ID": 6,
       "Team1Acronym": "Baba",
-      "Team1Score": null,
+      "Team1Score": 5,
       "Team2Acronym": "GOAT",
-      "Team2Score": null,
-      "Completed": false,
+      "Team2Score": 6,
+      "Completed": true,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-07T07:10:04.833137+01:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 256,
@@ -298,19 +301,20 @@
         "Baba",
         "GOAT"
       ],
-      "WinnerColour": "Blue"
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 10,
       "Team1Acronym": "6wcP",
-      "Team1Score": null,
+      "Team1Score": 6,
       "Team2Acronym": "FROG",
-      "Team2Score": null,
-      "Completed": false,
+      "Team2Score": 0,
+      "Completed": true,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-07T07:10:04.833137+01:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 256,
@@ -320,19 +324,19 @@
         "6wcP",
         "FROG"
       ],
-      "WinnerColour": "Blue"
+      "PointsToWin": 6
     },
     {
       "ID": 14,
       "Team1Acronym": "Burg",
-      "Team1Score": null,
+      "Team1Score": 6,
       "Team2Acronym": "wdh",
-      "Team2Score": null,
-      "Completed": false,
+      "Team2Score": 0,
+      "Completed": true,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-07T07:10:04.833137+01:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 256,
@@ -342,19 +346,19 @@
         "Burg",
         "wdh"
       ],
-      "WinnerColour": "Blue"
+      "PointsToWin": 6
     },
     {
       "ID": 17,
       "Team1Acronym": "wdh",
       "Team1Score": null,
-      "Team2Acronym": "FUFU",
+      "Team2Acronym": "amd",
       "Team2Score": null,
       "Completed": false,
       "Losers": true,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-08T06:00:00+00:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 448,
@@ -362,41 +366,45 @@
       },
       "Acronyms": [
         "wdh",
-        "FUFU"
+        "amd"
       ],
-      "WinnerColour": "Blue"
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 21,
       "Team1Acronym": "FROG",
       "Team1Score": null,
+      "Team2Acronym": "Baba",
       "Team2Score": null,
       "Completed": false,
       "Losers": true,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-08T23:59:59+00:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 448,
         "Y": 992
       },
       "Acronyms": [
-        "FROG"
+        "FROG",
+        "Baba"
       ],
-      "WinnerColour": "Blue"
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 24,
       "Team1Acronym": "Baba",
-      "Team1Score": null,
-      "Team2Acronym": "Carb",
-      "Team2Score": null,
+      "Team1Score": 0,
+      "Team2Acronym": "FROG",
+      "Team2Score": 0,
       "Completed": false,
       "Losers": true,
       "PicksBans": [],
-      "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Current": true,
+      "Date": "2023-04-07T16:00:00+00:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 448,
@@ -404,29 +412,33 @@
       },
       "Acronyms": [
         "Baba",
-        "Carb"
+        "FROG"
       ],
-      "WinnerColour": "Blue"
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 28,
       "Team1Acronym": "amd",
       "Team1Score": null,
+      "Team2Acronym": "wdh",
       "Team2Score": null,
       "Completed": false,
       "Losers": true,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-08T21:00:00+00:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 448,
         "Y": 1184
       },
       "Acronyms": [
-        "amd"
+        "amd",
+        "wdh"
       ],
-      "WinnerColour": "Blue"
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 18,
@@ -462,22 +474,30 @@
     },
     {
       "ID": 4,
+      "Team1Acronym": "\\o/",
       "Team1Score": null,
+      "Team2Acronym": "GOAT",
       "Team2Score": null,
       "Completed": false,
       "Losers": false,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-09T12:00:00+00:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 768,
         "Y": 208
       },
-      "Acronyms": []
+      "Acronyms": [
+        "\\o/",
+        "GOAT"
+      ],
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 12,
+      "Team1Acronym": "6wcP",
       "Team1Score": null,
       "Team2Acronym": "Burg",
       "Team2Score": null,
@@ -485,15 +505,18 @@
       "Losers": false,
       "PicksBans": [],
       "Current": false,
-      "Date": "2023-03-26T05:42:36.527195+01:00",
+      "Date": "2023-04-09T02:00:00+00:00",
       "ConditionalMatches": [],
       "Position": {
         "X": 768,
         "Y": 592
       },
       "Acronyms": [
+        "6wcP",
         "Burg"
-      ]
+      ],
+      "WinnerColour": "Blue",
+      "PointsToWin": 6
     },
     {
       "ID": 19,
@@ -1007,7 +1030,7 @@
           }
         }
       ],
-      "StartDate": "2023-04-07T06:10:04.827843+00:00",
+      "StartDate": "2023-04-07T07:10:04.827843+01:00",
       "Matches": []
     },
     {
@@ -1736,13 +1759,13 @@
           }
         }
       ],
-      "StartDate": "2023-04-07T06:10:04.833018+00:00",
+      "StartDate": "2023-04-07T07:10:04.833018+01:00",
       "Matches": []
     },
     {
       "Name": "Quarterfinals",
       "Description": "",
-      "BestOf": 9,
+      "BestOf": 11,
       "Beatmaps": [
         {
           "ID": 3640521,
@@ -2505,13 +2528,22 @@
           }
         }
       ],
-      "StartDate": "2023-04-07T06:10:04.833137+00:00",
-      "Matches": []
+      "StartDate": "2023-04-07T07:10:04.833137+01:00",
+      "Matches": [
+        16,
+        20,
+        23,
+        27,
+        2,
+        6,
+        10,
+        14
+      ]
     },
     {
       "Name": "Semifinals",
       "Description": "",
-      "BestOf": 9,
+      "BestOf": 11,
       "Beatmaps": [
         {
           "ID": 4084013,
@@ -2779,6 +2811,7 @@
               "BackgroundFile": ""
             },
             "Difficulty": {
+              "DrainRate": 5.0,
               "CircleSize": 3.7,
               "OverallDifficulty": 8.0,
               "ApproachRate": 9.2,
@@ -2818,6 +2851,7 @@
               "BackgroundFile": ""
             },
             "Difficulty": {
+              "DrainRate": 5.0,
               "CircleSize": 4.5,
               "OverallDifficulty": 4.2,
               "ApproachRate": 8.6,
@@ -3257,6 +3291,7 @@
               "BackgroundFile": ""
             },
             "Difficulty": {
+              "DrainRate": 5.0,
               "CircleSize": 2.0,
               "OverallDifficulty": 8.0,
               "ApproachRate": 10.0,
@@ -3296,6 +3331,7 @@
               "BackgroundFile": ""
             },
             "Difficulty": {
+              "DrainRate": 5.0,
               "CircleSize": 5.0,
               "OverallDifficulty": 9.0,
               "ApproachRate": 8.0,
@@ -3310,8 +3346,15 @@
           }
         }
       ],
-      "StartDate": "2023-04-07T06:10:04.833213+00:00",
-      "Matches": []
+      "StartDate": "2023-04-07T07:10:04.833213+01:00",
+      "Matches": [
+        17,
+        21,
+        24,
+        28,
+        4,
+        12
+      ]
     }
   ],
   "Teams": [
